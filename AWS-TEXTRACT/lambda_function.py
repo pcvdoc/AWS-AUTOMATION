@@ -88,4 +88,4 @@ def lambda_handler(event, context):
         json_file = json.dumps(output)
         s3.put_object(Bucket=bucketname, Key=new_filename.replace(".pdf", ".json"), Body=json_file)
 
-    return {"statusCode": 200, "body": json.dumps("Thanks from Srce Cde!")}
+    return {"statusCode": 200, "body": json.dumps("Thanks from pcv.doc")}
